@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+body{
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    background: hsl(225, 100%, 94%);
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+}
+
+.container{
+    position: relative;
+    margin: 50px auto;
+    width: 350px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.image{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.content{
+    padding: 25px;
+    align-items: center;
+}
+
+.description{
+    margin-bottom: 20px;
+}
+
+.desc_title{
+    margin-bottom: 20px;
+    color: hsl(223, 47%, 23%);
+}
+
+.desc_p{
+    color: hsl(224, 23%, 55%);
+}
+
+.info_plan{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    background: hsl(225, 100%, 98%);
+    padding: 15px 10px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.price_plan{
+    font-size: 13px;
+    margin-right: 25px;
+}
+
+.price_plan h3{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.price_plan span{
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 600;
+}
+
+.button_plan{
+    font-size: 14px;
+    font-weight: 800;
+    color: hsl(223, 47%, 23%);
+}
+
+.button_plan a:hover{
+    cursor: pointer;
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+
+.selectors{
+    text-align: center;
+}
+
+.selectors input{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.proc{
+    font-size: 15px;
+    font-weight: 700;
+    background: hsl(245, 75%, 52%);
+    color: #fff;
+    box-shadow: 0 10px 30px 1px hsl(224, 23%, 55%);
+}
+
+.proc:hover{
+    cursor: pointer;
+    background: hsl(245, 75%, 62%);
+}
+
+.canc{
+    font-size: 15px;
+    font-weight: 700;
+    background: none;
+    color: hsl(224, 23%, 55%);
+}
+
+.canc:hover{
+    cursor: pointer;
+    color: hsl(223, 47%, 23%);
+}
+
+.attribution{
+    text-align: center;
+}
+
+@media screen and (min-width: 450px){
+    body{
+        width: 100vw;
+        background-image: url(images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+    }
+
+    .container{
+        margin: 50px auto;
+    }
+}
+
+@media screen and (min-width: 1500px){
+    body{
+        width: 100vw;
+        background-image: url(images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 100vw;
+    }
+
+    .container{
+        width: 600px;
+        height: 1000px;
+        margin: 150px auto;
+    }
+
+    .description{
+        margin-bottom: 50px;
+    }
+
+    .desc_title{
+        font-size: 40px;
+    }
+
+    .desc_p{
+        font-size: 30px;
+    }
+
+    .info_plan{
+        margin-bottom: 50px;
+    }
+
+    .image_music img{
+        height: 100px;
+    }
+
+    .price_plan h3{
+        font-size: 30px;
+    }
+
+    .price_plan span{
+        font-size: 30px;
+    }
+
+    .button_plan a{
+        font-size: 25px;
+    }
+
+    .selectors input{
+        font-size: 30px;
+        padding: 30px;
+    }
+
+    .attribution{
+        font-size: 30px;
+    }
+}
